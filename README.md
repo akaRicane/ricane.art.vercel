@@ -9,4 +9,6 @@ use `pnpm dev`
 > shadcn.ui\
 > prisma\
 > nextAuth.js\
-> pnpm
+> pnpm\
+> lucide.dev\
+> next-themes
