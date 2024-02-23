@@ -1,4 +1,4 @@
-import { AboutResponsiveDrawer } from "../custom/AboutResponsiveDrawer";
+import { AboutResponsiveDrawer } from "@/components/custom/AboutResponsiveDrawer";
 
 export const Footer = () => {
   return (

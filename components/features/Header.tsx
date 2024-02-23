@@ -1,5 +1,5 @@
+import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
-import { Button } from "../ui/button";
 import Link from "next/link";
 
 export const Header = () => {
@@ -12,9 +12,9 @@ export const Header = () => {
       </div>
       <div className="flex flex-row m-0 p-0 basis-1/4 justify-center">
         <ThemeToggle></ThemeToggle>
-        <Button className="h-full rounded-md" variant={"ghost"}>
+        {/* <Button className="h-full rounded-md" variant={"ghost"}>
           login
-        </Button>
+        </Button> */}
       </div>
     </header>
   );
