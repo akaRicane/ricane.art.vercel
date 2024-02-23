@@ -1,7 +1,15 @@
 "use client";
 
-import React from 'react'
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -12,28 +20,41 @@ import {
 
 export const HomeRedirectCarousel = () => {
   const [musicCardFocus, setMusicCardFocus] = React.useState<Boolean>(false);
-  const [projectsCardFocus, setProjectsCardFocus] = React.useState<Boolean>(false);
+  const [projectsCardFocus, setProjectsCardFocus] =
+    React.useState<Boolean>(false);
   const [whoamiCardFocus, setWhoamiCardFocus] = React.useState<Boolean>(false);
 
-  const toggleFocus = (target: String) => {
-    console.log(`Toggle focus ${target}`);
+  const onClickFromCard = (target: String) => {
+    console.log(target);
     switch (target) {
-      case 'music': {
+      case "music": {
         setMusicCardFocus(!musicCardFocus);
         setProjectsCardFocus(false);
         setWhoamiCardFocus(false);
         break;
       }
-      case 'projects': {
+      case "visit-music": {
+        console.log("visit music clicked");
+        break;
+      }
+      case "projects": {
         setMusicCardFocus(false);
         setProjectsCardFocus(!projectsCardFocus);
         setWhoamiCardFocus(false);
         break;
       }
-      case 'whoami': {
+      case "visit-projects": {
+        console.log("visit projects clicked");
+        break;
+      }
+      case "whoami": {
         setMusicCardFocus(false);
         setProjectsCardFocus(false);
         setWhoamiCardFocus(!whoamiCardFocus);
+        break;
+      }
+      case "visit-whoami": {
+        console.log("visit who am i clicked");
         break;
       }
       default: {
@@ -42,8 +63,13 @@ export const HomeRedirectCarousel = () => {
         setWhoamiCardFocus(false);
       }
     }
+  };
 
-  }
+  const focusedStyledCardContent =
+    "flex aspect-square items-center justify-center p-0";
+  const notFocusedStyledCardContent =
+    "flex aspect-square items-center justify-center p-0";
+  const cardContentSpanStyle = "text-4xl font-semibold";
 
   return (
     <Carousel
@@ -56,54 +82,85 @@ export const HomeRedirectCarousel = () => {
       <CarouselContent>
         <CarouselItem key={0}>
           <div className="p-1">
-            <Card onClick={() => toggleFocus("music")}>
-              {musicCardFocus ? (
-                <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <span className="text-4xl font-semibold">music focused</span>
-                </CardContent>
-              ) : (
-                <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <span className="text-4xl font-semibold">
-                    music not focused
-                  </span>
-                </CardContent>
-              )}
+            <Card>
+              <CardContent
+                className={focusedStyledCardContent}
+                onClick={() => onClickFromCard("music")}
+              >
+                {musicCardFocus ? (
+                  <span className={cardContentSpanStyle}>some more details about music</span>
+                ) : (
+                  <p className={cardContentSpanStyle}>music</p>
+                )}
+              </CardContent>
+              <CardFooter>
+                {musicCardFocus ? (
+                  <Button
+                    className="w-full"
+                    onClick={() => onClickFromCard("visit-music")}
+                  >
+                    visit
+                  </Button>
+                ) : (
+                  <></>
+                )}
+              </CardFooter>
             </Card>
           </div>
         </CarouselItem>
         <CarouselItem key={1}>
           <div className="p-1">
-            <Card onClick={() => toggleFocus("projects")}>
-              {projectsCardFocus ? (
-                <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <span className="text-4xl font-semibold">
-                    projects focused
-                  </span>
-                </CardContent>
-              ) : (
-                <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <span className="text-4xl font-semibold">
-                    projects not focused
-                  </span>
-                </CardContent>
-              )}
+            <Card>
+              <CardContent
+                className={focusedStyledCardContent}
+                onClick={() => onClickFromCard("projects")}
+              >
+                {projectsCardFocus ? (
+                  <span className={cardContentSpanStyle}>some more details about projects</span>
+                ) : (
+                  <p className={cardContentSpanStyle}>projects</p>
+                )}
+              </CardContent>
+              <CardFooter>
+                {projectsCardFocus ? (
+                  <Button
+                    className="w-full"
+                    onClick={() => onClickFromCard("visit-projects")}
+                  >
+                    visit
+                  </Button>
+                ) : (
+                  <></>
+                )}
+              </CardFooter>
             </Card>
           </div>
         </CarouselItem>
         <CarouselItem key={2}>
           <div className="p-1">
-            <Card onClick={() => toggleFocus("whoami")}>
-              {whoamiCardFocus ? (
-                <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <span className="text-4xl font-semibold">who am i focused</span>
-                </CardContent>
-              ) : (
-                <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <span className="text-4xl font-semibold">
-                    who am i not focused
-                  </span>
-                </CardContent>
-              )}
+            <Card>
+              <CardContent
+                className={focusedStyledCardContent}
+                onClick={() => onClickFromCard("whoami")}
+              >
+                {whoamiCardFocus ? (
+                  <span className={cardContentSpanStyle}>some more details about me</span>
+                ) : (
+                  <p className={cardContentSpanStyle}>who am i ?</p>
+                )}
+              </CardContent>
+              <CardFooter>
+                {whoamiCardFocus ? (
+                  <Button
+                    className="w-full"
+                    onClick={() => onClickFromCard("visit-whoami")}
+                  >
+                    visit
+                  </Button>
+                ) : (
+                  <></>
+                )}
+              </CardFooter>
             </Card>
           </div>
         </CarouselItem>
