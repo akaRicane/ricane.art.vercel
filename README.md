@@ -1,4 +1,4 @@
-## Run project
+## Run website
 
 use `pnpm dev`
 

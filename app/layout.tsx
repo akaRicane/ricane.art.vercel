@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ricane.art/projects",
+  title: "ricane.art website",
   description: "Next.js application for my projects",
 };
 
