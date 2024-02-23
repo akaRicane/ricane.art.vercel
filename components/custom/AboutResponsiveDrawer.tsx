@@ -2,7 +2,7 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
-// import { useMediaQuery } from "@/hooks/use-media-query";
+import { useMediaQuery } from "usehooks-ts";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -27,8 +27,7 @@ import { Label } from "@/components/ui/label";
 
 export const AboutResponsiveDrawer = () => {
   const [open, setOpen] = React.useState(false);
-  // const isDesktop = useMediaQuery("(min-width: 768px)");
-  const isDesktop = false;
+  const isDesktop = useMediaQuery("(min-width: 768px)");
 
   if (isDesktop) {
     return (
