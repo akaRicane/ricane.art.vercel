@@ -19,13 +19,12 @@ import {
 } from "@/components/ui/carousel";
 
 export const HomeRedirectCarousel = () => {
-  const [musicCardFocus, setMusicCardFocus] = React.useState<Boolean>(false);
+  const [musicCardFocus, setMusicCardFocus] = React.useState<boolean>(false);
   const [projectsCardFocus, setProjectsCardFocus] =
-    React.useState<Boolean>(false);
-  const [whoamiCardFocus, setWhoamiCardFocus] = React.useState<Boolean>(false);
+    React.useState<boolean>(false);
+  const [whoamiCardFocus, setWhoamiCardFocus] = React.useState<boolean>(false);
 
   const onClickFromCard = (target: String) => {
-    console.log(target);
     switch (target) {
       case "music": {
         setMusicCardFocus(!musicCardFocus);
@@ -165,7 +164,7 @@ export const HomeRedirectCarousel = () => {
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
+      <CarouselPrevious/>
       <CarouselNext />
     </Carousel>
   );

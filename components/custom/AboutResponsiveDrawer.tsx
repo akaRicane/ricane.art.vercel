@@ -52,7 +52,9 @@ export const AboutResponsiveDrawer = () => {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <Button variant="outline">about</Button>
+        <Button className="border-0 border-t-4" variant="outline">
+          about
+        </Button>
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="text-left">
