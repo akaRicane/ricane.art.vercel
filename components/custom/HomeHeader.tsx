@@ -10,7 +10,7 @@ export const HomeHeader = () => {
           <Link href="/">ricane.art</Link>
         </Button>
       </div>
-      <div className="flex flex-row m-0 p-0 basis-1/4 justify-center">
+      <div className="flex flex-row m-0 p-0 basis-1/4 justify-end mr-4">
         <ThemeToggle></ThemeToggle>
         {/* <Button className="h-full rounded-md" variant={"ghost"}>
           login
