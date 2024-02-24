@@ -16,14 +16,18 @@ export const HomeRedirectAccordion = () => {
         <AccordionTrigger>music</AccordionTrigger>
         <AccordionContent>
           <div className="flex flex-row items-center">
-            <p className="basis-3/4 font-extralight">some more details about music</p>
-            <Button
-              className="h-full rounded-md flex justify-end"
-              variant={"ghost"}
-              asChild
-            >
-              <Link href="/music">visit</Link>
-            </Button>
+            <p className="basis-3/4 font-extralight">
+              some more details about music
+            </p>
+            <div className="w-full flex flex-row justify-end">
+              <Button
+                className="h-full rounded-md flex justify-end"
+                variant={"ghost"}
+                asChild
+              >
+                <Link href="/music">visit</Link>
+              </Button>
+            </div>
           </div>
         </AccordionContent>
       </AccordionItem>
@@ -31,14 +35,18 @@ export const HomeRedirectAccordion = () => {
         <AccordionTrigger>projects</AccordionTrigger>
         <AccordionContent>
           <div className="flex flex-row items-center">
-            <p className="basis-3/4 font-extralight">some more details about projects</p>
-            <Button
-              className="h-full rounded-md flex justify-end"
-              variant={"ghost"}
-              asChild
-            >
-              <Link href="/projects">visit</Link>
-            </Button>
+            <p className="basis-3/4 font-extralight">
+              some more details about projects
+            </p>
+            <div className="w-full flex flex-row justify-end">
+              <Button
+                className="h-full rounded-md flex justify-end"
+                variant={"ghost"}
+                asChild
+              >
+                <Link href="/projects">visit</Link>
+              </Button>
+            </div>
           </div>
         </AccordionContent>
       </AccordionItem>
@@ -46,14 +54,18 @@ export const HomeRedirectAccordion = () => {
         <AccordionTrigger>who am I ?</AccordionTrigger>
         <AccordionContent>
           <div className="flex flex-row items-center">
-            <p className="basis-3/4 font-extralight">some more details about me</p>
-            <Button
-              className="h-full rounded-md flex justify-end"
-              variant={"ghost"}
-              asChild
-            >
-              <Link href="/whoami">visit</Link>
-            </Button>
+            <p className="basis-3/4 font-extralight">
+              some more details about me
+            </p>
+            <div className="w-full flex flex-row justify-end">
+              <Button
+                className="h-full rounded-md flex justify-end"
+                variant={"ghost"}
+                asChild
+              >
+                <Link href="/whoami">visit</Link>
+              </Button>
+            </div>
           </div>
         </AccordionContent>
       </AccordionItem>
