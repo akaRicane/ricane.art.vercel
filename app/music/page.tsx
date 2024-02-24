@@ -8,8 +8,8 @@ import Link from "next/link";
 import { Instagram, AudioLines } from "lucide-react";
 
 export default function MusicPage() {
-  const musicMenuButtonStyle = "w-full h-full";
-  const musicIconsStyle = "w-12 h-12 stroke-1 stroke-purple-700";
+  const musicMenuButtonStyle: string = "w-full h-full";
+  const musicIconsStyle: string = "w-12 h-12 stroke-1 stroke-purple-700";
 
   return (
     <div>

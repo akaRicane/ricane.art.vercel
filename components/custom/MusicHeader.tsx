@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeToggle } from "../theme/ThemeToggle";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 export const MusicHeader = () => {
   return (
