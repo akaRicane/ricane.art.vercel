@@ -38,7 +38,7 @@ export const MusicLiveSessionsDjSetCarousel = () => {
                 <CardContent className="w-full h-full m-0 p-0">
                   <iframe
                     width="100%"
-                    height="300"
+                    height="400"
                     allow="autoplay"
                     className="m-0 p-0"
                     src={djSetPath}
