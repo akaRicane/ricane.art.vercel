@@ -15,7 +15,16 @@ export default function MusicPage() {
         </div>
         <div>
           <Button>
-            <Link href="/">home</Link>
+            <Link href="/music/releases">releases</Link>
+          </Button>
+          <Button>
+            <Link href="/music/livesessions">live sessions</Link>
+          </Button>
+          <Button>
+            <Link href="/music/mastering">mix & mastering</Link>
+          </Button>
+          <Button>
+            <Link href="/music/contact">contact</Link>
           </Button>
         </div>
       </div>
