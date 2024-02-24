@@ -3,6 +3,8 @@ import React from 'react'
 import { ThemeToggle } from '@/components/theme/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { Home } from 'lucide-react'
+import MusicLayout from '../../app/music/layout';
 
 export const MusicSubPagesHeader = () => {
   const musicMenuButtonStyle: string = "w-full h-full";
@@ -23,8 +25,13 @@ export const MusicSubPagesHeader = () => {
           <Link href="/music/contact">contact</Link>
         </Button>
       </div>
-      <div className="flex flex-row justify-end mr-4">
-        <ThemeToggle />
+      <div className="flex flex-row justify-end self-center mr-4">
+        <Button className="" variant="ghost">
+          <Link href="/music" className="self-center">
+            <Home className="w-6 h-6 stroke-1 stroke-purple-700 self-center" />
+          </Link>
+        </Button>
+        <ThemeToggle/>
       </div>
     </div>
   );
