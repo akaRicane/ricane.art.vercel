@@ -12,7 +12,7 @@ export default function Home() {
     React.useState<boolean>(false);
 
   return (
-    <div>
+    <div className='h-screen w-full m-0 p-0'>
       <HomeHeader></HomeHeader>
       <div className="overflow-y-auto mx-12 my-24 mb-12">
         <p className="mb-12 font-extralight">

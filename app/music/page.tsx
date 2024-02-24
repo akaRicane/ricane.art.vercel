@@ -12,7 +12,7 @@ export default function MusicPage() {
   const musicIconsStyle: string = "w-12 h-12 stroke-1 stroke-purple-700";
 
   return (
-    <div>
+    <div className='h-screen w-full m-0 p-0'>
       <MusicHeader />
       <div className="flex flex-col my-0 mx-0 justify-center">
         <div className="flex flex-row justify-center max-h-[70vh] aspect-video self-center">

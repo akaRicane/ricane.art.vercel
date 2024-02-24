@@ -11,7 +11,7 @@ export default function ReleasesPage() {
   ];
 
   return (
-    <div>
+    <div className='h-screen w-full m-0 p-0'>
       <MusicSubPagesHeader />
       <div className="w-full flex flex-col">
         <div className="flex flex-col justify-center self-center mx-12 my-4 w-full">

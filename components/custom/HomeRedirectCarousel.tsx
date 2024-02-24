@@ -54,11 +54,11 @@ export const HomeRedirectCarousel = () => {
     }
   };
 
-  const focusedStyledCardContent =
+  const focusedStyledCardContent: string =
     "flex aspect-square items-center justify-center p-0";
-  const notFocusedStyledCardContent =
+  const notFocusedStyledCardContent: string =
     "flex aspect-square items-center justify-center p-0";
-  const cardContentSpanStyle = "text-4xl font-semibold";
+  const cardContentSpanStyle: string = "text-4xl font-semibold";
 
   return (
     <Carousel
