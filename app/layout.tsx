@@ -1,5 +1,3 @@
-import { Footer } from "@/components/features/Footer";
-import { Header } from "@/components/features/Header";
 import { ThemeHandler } from "@/components/theme/ThemeHandler";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -23,9 +21,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Header></Header>
             {children}
-            <Footer></Footer>
           </ThemeHandler>
         </body>
       </html>

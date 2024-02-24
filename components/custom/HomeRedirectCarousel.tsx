@@ -17,6 +17,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
+
 
 export const HomeRedirectCarousel = () => {
   const [musicCardFocus, setMusicCardFocus] = React.useState<boolean>(false);
@@ -32,28 +34,16 @@ export const HomeRedirectCarousel = () => {
         setWhoamiCardFocus(false);
         break;
       }
-      case "visit-music": {
-        console.log("visit music clicked");
-        break;
-      }
       case "projects": {
         setMusicCardFocus(false);
         setProjectsCardFocus(!projectsCardFocus);
         setWhoamiCardFocus(false);
         break;
       }
-      case "visit-projects": {
-        console.log("visit projects clicked");
-        break;
-      }
       case "whoami": {
         setMusicCardFocus(false);
         setProjectsCardFocus(false);
         setWhoamiCardFocus(!whoamiCardFocus);
-        break;
-      }
-      case "visit-whoami": {
-        console.log("visit who am i clicked");
         break;
       }
       default: {
@@ -87,18 +77,17 @@ export const HomeRedirectCarousel = () => {
                 onClick={() => onClickFromCard("music")}
               >
                 {musicCardFocus ? (
-                  <span className={cardContentSpanStyle}>some more details about music</span>
+                  <span className={cardContentSpanStyle}>
+                    some more details about music
+                  </span>
                 ) : (
                   <p className={cardContentSpanStyle}>music</p>
                 )}
               </CardContent>
               <CardFooter>
                 {musicCardFocus ? (
-                  <Button
-                    className="w-full"
-                    onClick={() => onClickFromCard("visit-music")}
-                  >
-                    visit
+                  <Button className="w-full">
+                    <Link href="/music">visit</Link>
                   </Button>
                 ) : (
                   <></>
@@ -115,7 +104,9 @@ export const HomeRedirectCarousel = () => {
                 onClick={() => onClickFromCard("projects")}
               >
                 {projectsCardFocus ? (
-                  <span className={cardContentSpanStyle}>some more details about projects</span>
+                  <span className={cardContentSpanStyle}>
+                    some more details about projects
+                  </span>
                 ) : (
                   <p className={cardContentSpanStyle}>projects</p>
                 )}
@@ -124,9 +115,8 @@ export const HomeRedirectCarousel = () => {
                 {projectsCardFocus ? (
                   <Button
                     className="w-full"
-                    onClick={() => onClickFromCard("visit-projects")}
                   >
-                    visit
+                    <Link href="/projects">visit</Link>
                   </Button>
                 ) : (
                   <></>
@@ -143,7 +133,9 @@ export const HomeRedirectCarousel = () => {
                 onClick={() => onClickFromCard("whoami")}
               >
                 {whoamiCardFocus ? (
-                  <span className={cardContentSpanStyle}>some more details about me</span>
+                  <span className={cardContentSpanStyle}>
+                    some more details about me
+                  </span>
                 ) : (
                   <p className={cardContentSpanStyle}>who am i ?</p>
                 )}
@@ -152,9 +144,8 @@ export const HomeRedirectCarousel = () => {
                 {whoamiCardFocus ? (
                   <Button
                     className="w-full"
-                    onClick={() => onClickFromCard("visit-whoami")}
                   >
-                    visit
+                    <Link href="/whoami">visit</Link>
                   </Button>
                 ) : (
                   <></>
@@ -164,7 +155,7 @@ export const HomeRedirectCarousel = () => {
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious/>
+      <CarouselPrevious />
       <CarouselNext />
     </Carousel>
   );

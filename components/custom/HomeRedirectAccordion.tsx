@@ -20,10 +20,9 @@ export const HomeRedirectAccordion = () => {
             <Button
               className="h-full rounded-md flex justify-end"
               variant={"ghost"}
-              onClick={() => console.log("visit music clicked")}
               asChild
             >
-              <Link href="/">visit</Link>
+              <Link href="/music">visit</Link>
             </Button>
           </div>
         </AccordionContent>
@@ -36,10 +35,9 @@ export const HomeRedirectAccordion = () => {
             <Button
               className="h-full rounded-md flex justify-end"
               variant={"ghost"}
-              onClick={() => console.log("visit projects clicked")}
               asChild
             >
-              <Link href="/">visit</Link>
+              <Link href="/projects">visit</Link>
             </Button>
           </div>
         </AccordionContent>
@@ -52,10 +50,9 @@ export const HomeRedirectAccordion = () => {
             <Button
               className="h-full rounded-md flex justify-end"
               variant={"ghost"}
-              onClick={() => console.log("visit who am i clicked")}
               asChild
             >
-              <Link href="/">visit</Link>
+              <Link href="/whoami">visit</Link>
             </Button>
           </div>
         </AccordionContent>

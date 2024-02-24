@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import Link from "next/link";
 
-export const Header = () => {
+export const HomeHeader = () => {
   return (
     <header className="flex flex-row bg-white dark:bg-purple-500 w-full h-14 m-0 p-0 fixed top-0 left-0 overflow-hidden">
       <div className="flex flex-row w-60 m-0 p-0 basis-3/4">
