@@ -11,15 +11,18 @@ export default function Home() {
   return (
     <div className="overflow-y-auto mx-12 my-24 mb-12">
       <p className="mb-12 font-extralight">
-        home body Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Integer blandit tempor risus, a sollicitudin tortor feugiat a. Nullam id
-        neque sit amet tellus semper condimentum. Maecenas nisl nulla,
-        condimentum non diam sed, gravida efficitur purus. Phasellus tempus at
-        nulla cursus convallis. Phasellus mi leo, suscipit non hendrerit eu,
-        lobortis in lectus.
+        Welcome to ricane.art! Explore my dynamic realm, where music,
+        programming, and art collide. Dive into melodic beats and digital
+        innovations across the Music and Projects sections, or uncover the
+        essence of Ricane in the Who Am I page. Embark on a journey where
+        creativity knows no bounds, curated by the composer, producer, DJ, and
+        programmer behind the scenes. Discover, experience, and immerse yourself
+        in my eclectic world.
       </p>
       <div className="flex flex-row mb-8 items-center">
-        <p className="flex justify-start basis-3/4 items-center text-xl m-0">explore</p>
+        <p className="flex justify-start basis-3/4 items-center text-xl m-0">
+          explore
+        </p>
         <div className="flex flex-row justify-end basis-1/4 text-xs font-extralight items-center">
           <Switch
             checked={carouselSwitchActive}
