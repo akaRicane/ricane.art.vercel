@@ -3,7 +3,7 @@ import { ThemeToggle } from "../theme/ThemeToggle";
 
 export const MusicHeader = () => {
   return (
-    <header className="flex flex-row w-full h-14 m-0 p-0 ">
+    <header className="flex flex-row w-full h-14 m-0 p-0 items-center">
       <div className="flex w-full h-full m-0 p-0 justify-center ml-14">
         <p className="flex flex-col justify-center align-middle">
           ricane music
