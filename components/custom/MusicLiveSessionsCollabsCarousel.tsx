@@ -20,6 +20,7 @@ import {
 export const MusicLiveSessionsCollabsCarousel = () => {
   const djSetsPaths: string[] = [
     "https://www.youtube.com/embed/y3BMFnQif7M?si=QSVh7c98qcvYRMex",
+    "https://www.youtube.com/embed/CbEDvrXDb1g?si=qaovL2duxOjRSNL_",
     "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1493584543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1089324655&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
   ];
